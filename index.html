@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="방송영상·OTT 트렌드 2025 Vol. 5" content="방송영상·OTT 트렌드 2025 Vol. 5" />
+  <meta property="og:image" content="./img/assets/meta.png">
+  <title>방송영상 · OTT 트렌드</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/swiper.css" />
+  <link rel="stylesheet" href="./css/detail.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH6ZRLY8VY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-GH6ZRLY8VY');
+  </script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon.png" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="./index.html" class="logo-wrap">
+      <img src="./img/assets/logo-white.png" alt="로고" class="logo" />
+    </a>
+
+    <div class="nav-right">
+      <div class="nav">
+        <a href="./index.html#spotlight" class="nav-item">스포트라이트</a>
+        <a href="./index.html#people" class="nav-item">피플 인사이트</a>
+        <a href="./index.html#global" class="nav-item">글로벌 마켓 리포트</a>
+        <a href="./index.html#trend" class="nav-item">트렌드 하이라이트</a>
+        <a href="./index.html#data-point" class="nav-item">데이터 포인트</a>
+      </div>
+
+      <button id="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="vol-info">2025 Vol. 5</div>
+    </div>
+
+    <!-- Fullscreen Mobile Modal -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="menu-header">
+        <p class="menu-title">메뉴</p>
+        <div class="menu-right">
+          <div class="vol-info">2025 Vol. 5</div>
+          <button id="menu-close">
+            <img src="./img/assets/close.png" alt="닫기" class="close-btn" />
+          </button>
+        </div>
+      </div>
+      <div id="menu-content" class="menu-content"></div>
+    </div>
+  </header>
+
+  <!-- Swiper 배너 -->
+  <div class="swiper-container main-banner-swiper">
+    <div class="swiper-wrapper" id="swiper-slides"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- 콘텐츠: Spotlight 섹션 -->
+  <section id="spotlight" class="section spotlight">
+    <div class="section-container">
+      <div class="section-title-wrap">
+        <div class="section-title-text">
+          <p class="kor-title">스포트라이트</p>
+          <p class="eng-title">
+            Spotligh<span class="text-highlight">T</span>
+          </p>
+        </div>
+        <img src="./img/assets/spotlight-subject-pc.png" alt="주제" class="subject-img-pc" />
+      </div>
+
+      <img src="./img/assets/spotlight-subject-m.png" alt="주제" class="subject-img-m" />
+
+      <div class="swiper spotlight-swiper">
+        <div class="swiper-wrapper spotlight-grid">
+          <!-- SpotlightItem A -->
+          <div class="swiper-slide">
+            <a href="./spotlight_1.html" class="spotlight-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript1/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <div style="display: flex; flex-direction: column;">
+                  <p class="item-author">최세정ㅣ고려대학교 미디어대학 교수</p>
+                </div>
+                <h2 class="item-title">크리에이터 이코노미 대격변: 니치 마켓의 선봉에서 미디어 생태계의 중심으로</h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- SpotlightItem B -->
+          <div class="swiper-slide">
+            <a href="./spotlight_2.html" class="spotlight-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript2/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">이은주ㅣ《서울신문》 기자</p>
+                <h2 class="item-title"><span class="bodyQuotes">‘</span>팬심<span class="bodyQuotes">’</span>이 곧 경쟁력...크리에이터 콘텐츠 생태계 이끄는 <span class="bodyQuotes">‘</span>팬덤 이코노미<span class="bodyQuotes">’</span></h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- SpotlightItem C -->
+          <div class="swiper-slide">
+            <a href="./spotlight_3.html" class="spotlight-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript3/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">권예지ㅣ한국방송광고진흥공사 미디어광고연구소 선임연구위원</p>
+                <h2 class="item-title">크리에이터 이코노미와 광고전략: 연결을 넘어 관계로, 관계를 넘어 시장으로</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev spotlight-button-prev">
+          <img src="./img/assets/page-arrow.png" alt="이전">
+        </div>
+        <div class="swiper-button-next spotlight-button-next">
+          <img src="./img/assets/page-arrow.png" alt="다음">
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!-- 콘텐츠: People 섹션 -->
+  <section id="people" class="section people">
+    <div class="section-container">
+      <div class="section-title-wrap">
+        <div class="section-title-text">
+          <p class="kor-title">피플 인사이트</p>
+          <p class="eng-title">
+            People Insigh<span class="text-highlight">T</span>
+          </p>
+        </div>
+        <img src="./img/assets/people-subject-pc.png" alt="주제" class="subject-img-pc" />
+      </div>
+      <img src="./img/assets/people-subject-m.png" alt="주제" class="subject-img-m" />
+
+      <div class="swiper people-swiper">
+        <div class="swiper-wrapper people-grid">
+          <!-- PeopleItem A -->
+          <div class="swiper-slide">
+            <a href="./people_1.html" class="people-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript4/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">백승엽ㅣ스튜디오 수제 이사•PD</p>
+                <h2 class="item-title">유튜브의 바다에서 디지털 스튜디오의 생존 전략을 답하다</h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- PeopleItem B -->
+          <div class="swiper-slide">
+            <a href="./people_2.html" class="people-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript5/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">박수진ㅣCJ ENM PD</p>
+                <h2 class="item-title">콘텐츠의 확장성, 세심한 밑작업이 만든다</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Swiper 버튼 -->
+        <div class="button-hidden swiper-button-prev people-button-prev">
+          <img src="./img/assets/page-arrow.png" alt="이전"/>
+        </div>
+        <div class="button-hidden swiper-button-next people-button-next">
+          <img src="./img/assets/page-arrow.png" alt="다음" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 콘텐츠: Global 섹션 -->
+  <section id="global" class="section global">
+    <div class="section-container">
+      <div class="section-title-wrap">
+        <div class="section-title-text">
+          <p class="kor-title">글로벌 마켓 리포트</p>
+          <p class="eng-title">
+            Global Market Repor<span class="text-highlight">T</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper global-swiper">
+        <div class="swiper-wrapper global-grid">
+          <!-- GlobalItem A -->
+          <div class="swiper-slide">
+            <a href="./global_1.html" class="global-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript6/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">오창학ㅣ광운대학교 미디어커뮤니케이션학부 부교수</p>
+                <h2 class="item-title">중국 마이크로 드라마 산업의 성장과 K-콘텐츠의 새로운 기회</h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- GlobalItem B -->
+          <div class="swiper-slide">
+            <a href="./global_2.html" class="global-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript7/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">김정곤ㅣ대외경제정책연구원 연구위원</p>
+                <h2 class="item-title">인도로 가는 K-방송영상콘텐츠 산업: 드라마를 중심으로</h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- GlobalItem C -->
+          <div class="swiper-slide">
+            <a href="./global_3.html" class="global-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript8/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">유진희ㅣ중앙대학교 첨단영상대학원 겸임교수</p>
+                <h2 class="item-title">메가 IP로 성장한 키즈콘텐츠, 문화의 새로운 중심축으로 떠오르다</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="button-hidden swiper-button-prev global-button-prev">
+          <img src="./img/assets/page-arrow.png" alt="이전">
+        </div>
+        <div class="button-hidden swiper-button-next global-button-next">
+          <img src="./img/assets/page-arrow.png" alt="다음">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 콘텐츠: Trend 섹션 -->
+  <section id="trend" class="section">
+    <div class="section-container">
+      <div class="section-title-wrap">
+        <div class="section-title-text">
+          <p class="kor-title">트렌드 하이라이트</p>
+          <p class="eng-title">
+            Trend Highligh<span class="text-highlight">T</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper trend-swiper">
+        <div class="swiper-wrapper trend-grid">
+          <!-- TrendItem A -->
+          <div class="swiper-slide">
+            <a href="./trend_1.html" class="trend-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript9/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">전은선ㅣCJ ENM 전략지원팀</p>
+                <h2 class="item-title">
+                  국내 OTT, 로컬을 넘어 글로벌로 간다: 티빙(TVING) 글로벌 진출의 의의와 과제
+                </h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- TrendItem B -->
+          <div class="swiper-slide">
+            <a href="./trend_2.html" class="trend-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript10/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">이규탁ㅣ한국조지메이슨대학교 국제학과 교수</p>
+                <h2 class="item-title">
+                  K-팝, 장르에서 콘텐츠로
+                </h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- TrendItem C -->
+          <div class="swiper-slide">
+            <a href="./trend_3.html" class="trend-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript11/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">박꽃ㅣ《이투데이》 문화전문기자</p>
+                <h2 class="item-title">
+                  화면 밖으로 나온 방송영상콘텐츠, 체험으로 확장하다.
+                </h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- TrendItem D -->
+          <div class="swiper-slide">
+            <a href="./trend_4.html" class="trend-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript12/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">손영준ㅣ오길비코리아 AE</p>
+                <h2 class="item-title">
+                  AI가 이끄는 넥스트 프로덕션 시대: 창작의 확장, 제작의 새로운 패러다임
+                </h2>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev trend-button-prev">
+          <img src="./img/assets/page-arrow.png" alt="이전" />
+        </div>
+        <div class="swiper-button-next trend-button-next">
+          <img src="./img/assets/page-arrow.png" alt="다음" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 콘텐츠: Data Point 섹션 -->
+  <section id="data-point" class="section data-point">
+    <div class="section-container" style="padding-top:0px;">
+      <div class="section-title-wrap" id="data-subject-wrap">
+        <div class="section-title-text">
+          <p class="kor-title">데이터 포인트</p>
+          <p class="eng-title">
+            DataPoin<span class="text-highlight">T</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper data-swiper">
+        <div class="swiper-wrapper data-grid">
+          <!-- DataItem A -->
+          <div class="swiper-slide">
+            <a href="./data_1.html" class="data-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript13/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <h2 class="item-title">2026년 글로벌 미디어 시장 전망</h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- DataItem B -->
+          <div class="swiper-slide">
+            <a href="./data_2.html" class="data-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript14/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <h2 class="item-title">글로벌 동향 분석: 국가별 인기 장르</h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- DataItem C -->
+          <div class="swiper-slide">
+            <a href="./data_3.html" class="data-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript15/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <h2 class="item-title">미국의 TV 시청 트렌드</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="button-hidden swiper-button-prev data-button-prev">
+          <img src="./img/assets/page-arrow.png" alt="이전" />
+        </div>
+        <div class="button-hidden swiper-button-next data-button-next">
+          <img src="./img/assets/page-arrow.png" alt="다음" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 만족도 조사 -->
+  <div id="survey-banner" class="survey-banner">
+    <div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdv_HqSLvHI5p18jJ2x1uuJsE8SvXzRw9Ml1jJbUI3O6KLGYQ/viewform?usp=publish-editor"
+      target="_blank" class="survey-link">
+        <img src="./img/assets/survey-banner-pc.png" alt="만족도 조사 이미지">
+        <img src="./img/assets/survey-banner-mobile.png" alt="만족도 조사 이미지">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- 상단: 로고와 설명 -->
+      <div class="footer-top-wrap">
+        <div class="footer-top">
+
+          <div class="footer-logo-wrap">
+            <img src="./img/assets/kocca-logo-white.png" alt="한국콘텐츠진흥원 로고" class="footer-logo" />
+
+            <p class="footer-description">
+              &lt;방송영상·OTT 트렌드&gt;에 실린 글과 사진은 한국콘텐츠진흥원의 허가 없이 사용할 수 없으며,
+              <br class="footer-hidden" />
+              본지의 내용은 필자 개인의 의견으로 한국콘텐츠진흥원의 공식 견해가 아닙니다.
+            </p>
+          </div>
+
+          <!-- 발행 정보 -->
+          <div class="footer-info">
+            <div class="footer-info-group">
+              <div>
+                <p>발행인</p>
+                <p>유현석(한국콘텐츠진흥원 원장직무대행)</p>
+              </div>
+              <div>
+                <p>발행일</p>
+                <p>2025년 12월 19일</p>
+              </div>
+              <div>
+                <p>발행처</p>
+                <div style="display: flex; gap:4px; flex-direction: column;">
+                  <p>한국콘텐츠진흥원 콘텐츠산업정책연구센터 산업정책팀</p>
+                  <p>전라남도 나주시 교육길 35</p>
+                  <p>T. 1566-1114 https://www.kocca.kr</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-info-group">
+              <div>
+                <p>기획·편집</p>
+                <div style="display: flex; gap:4px; flex-direction: column;">
+                  <p>한국콘텐츠진흥원 콘텐츠산업정책연구센터 산업정책팀</p>
+                  <p>(주)컬쳐미디어랩</p>
+                </div>
+              </div>
+
+              <div>
+                <p>기획위원</p>
+                <div style="display: flex; gap:4px; flex-direction: column;">
+                  <p>이성민(한국방송통신대학교 미디어영상학과 부교수)</p>
+                  <p>채정화(서강대학교 ICT법경제연구소 연구교수)</p>
+                </div>
+              </div>
+
+              <div>
+                <p>ISSN</p>
+                <div>
+                  <p>3091-6771(online)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-buttons">
+          <a href="./download/2025_방송영상&OTT트렌드_Vol5_PDF_최종본.pdf" class="footer-button-outline"
+            download="2025_방송영상&OTT트렌드_Vol5_PDF">2025 Vol.5 PDF 다운받기</a>
+          <a href="https://www.kocca.kr/kocca/common/Mailling.do?menuNo=204918" target="_blank"
+            class="footer-button-filled">구독 신청하기</a>
+        </div>
+      </div>
+
+
+      <div class="footer-bottom">
+        <p>© 2025 Korea Creative Content Agency. All rights reserved.</p>
+        <img src="./img/assets/new_img_opentype04.png" alt="공공누리 제4유형 : 출처표시 + 상업적 이용금지 + 변경금지" />
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const selectors = [
+        ".spotlight-item",
+        ".global-item",
+        ".people-item",
+        ".trend-item",
+        ".data-item"
+      ];
+      const items = document.querySelectorAll(selectors.join(","));
+
+      function checkSlideUp() {
+        const triggerBottom = window.innerHeight * 0.9;
+        items.forEach((item) => {
+          const rect = item.getBoundingClientRect();
+          if (rect.top < triggerBottom) {
+            item.classList.add("animate");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", checkSlideUp);
+      window.addEventListener("resize", checkSlideUp);
+      checkSlideUp();
+    });
+  </script>
+
+  <!-- 스크립트 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/swiper-init.js"></script>
+</body>
+
+</html>
