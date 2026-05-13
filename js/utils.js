@@ -44,3 +44,45 @@ function scrollToBottom() {
 }
 
 window.addEventListener("scroll", handleAnchorButtonVisibility);
+
+// 주석 바텀시트
+document.addEventListener("DOMContentLoaded", function () {
+  const openBtn = document.getElementById("note-open-btn");
+  const closeBtn = document.getElementById("note-close-btn");
+  const sheet = document.getElementById("note-sheet");
+  const dim = document.getElementById("note-sheet-dim");
+  const panel = document.getElementById("note-sheet-panel");
+
+  if (!openBtn || !closeBtn || !sheet || !dim || !panel) return;
+
+  function openSheet() {
+    sheet.classList.remove("hidden");
+    requestAnimationFrame(() => {
+      panel.classList.remove("translate-y-full");
+      panel.classList.add("translate-y-0");
+    });
+    sheet.setAttribute("aria-hidden", "false");
+    document.body.classList.add("overflow-hidden");
+  }
+
+  function closeSheet() {
+    panel.classList.remove("translate-y-0");
+    panel.classList.add("translate-y-full");
+    sheet.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("overflow-hidden");
+
+    setTimeout(() => {
+      sheet.classList.add("hidden");
+    }, 300);
+  }
+
+  openBtn.addEventListener("click", openSheet);
+  closeBtn.addEventListener("click", closeSheet);
+  dim.addEventListener("click", closeSheet);
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && sheet.getAttribute("aria-hidden") === "false") {
+      closeSheet();
+    }
+  });
+});
