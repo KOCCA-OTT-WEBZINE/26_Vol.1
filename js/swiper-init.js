@@ -96,46 +96,75 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // === Swiper 초기화/해제 함수 ===
-  function toggleSwiper(key, selector, nextEl, prevEl) {
-    const initialized = !!swiperStates[key];
+function getSlidesPerView() {
+  const width = window.innerWidth;
 
-    if (!initialized) {
-      const slideCount = document.querySelectorAll(
-        `${selector} .swiper-slide`
-      ).length;
+  if (width >= 1440) return 3;
+  if (width >= 991) return 2;
+  return 1;
+}
 
-      swiperStates[key] = new Swiper(selector, {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 16,
-        slideToClickedSlide: false,
-        grabCursor: true,
-        loop: slideCount >= 3,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
+function updateNavigationVisibility(selector, nextEl, prevEl) {
+  const slideCount = document.querySelectorAll(`${selector} .swiper-slide`).length;
+  const slidesPerView = getSlidesPerView();
+
+  const shouldHide = slideCount <= slidesPerView;
+
+  document.querySelectorAll(`${nextEl}, ${prevEl}`).forEach((button) => {
+    button.style.display = shouldHide ? "none" : "";
+  });
+}
+
+// === Swiper 초기화/해제 함수 ===
+function toggleSwiper(key, selector, nextEl, prevEl) {
+  const initialized = !!swiperStates[key];
+
+  const slideCount = document.querySelectorAll(
+    `${selector} .swiper-slide`
+  ).length;
+
+  const slidesPerView = getSlidesPerView();
+  const canSwipe = slideCount > slidesPerView;
+
+  updateNavigationVisibility(selector, nextEl, prevEl);
+
+  if (!initialized) {
+    swiperStates[key] = new Swiper(selector, {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 16,
+      slideToClickedSlide: false,
+      grabCursor: canSwipe,
+      loop: canSwipe,
+      autoplay: canSwipe
+        ? {
+            delay: 3000,
+            disableOnInteraction: false,
+          }
+        : false,
+      navigation: {
+        nextEl,
+        prevEl,
+      },
+      breakpoints: {
+        1440: {
+          slidesPerView: 3,
+          spaceBetween: 16,
         },
-        navigation: {
-          nextEl,
-          prevEl,
+        991: {
+          slidesPerView: 2,
+          spaceBetween: 16,
         },
-        breakpoints: {
-          1440: {
-            slidesPerView: 3,
-            spaceBetween: 16,
-          },
-          991: {
-            slidesPerView: 2,
-            spaceBetween: 16,
-          },
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 16,
-          },
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 16,
         },
-      });
-    }
+      },
+    });
+  } else {
+    updateNavigationVisibility(selector, nextEl, prevEl);
   }
+}
 
   // === 전체 Swiper 초기화 실행 함수 ===
   function initAllSwipers() {

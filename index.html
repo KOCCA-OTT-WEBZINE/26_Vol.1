@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="방송영상·OTT 트렌드 2025 Vol. 5" content="방송영상·OTT 트렌드 2025 Vol. 5" />
+  <meta name="방송영상·OTT 트렌드 2026 Vol.1" content="방송영상·OTT 트렌드 2026 Vol.1" />
   <meta property="og:image" content="./img/assets/meta.png">
   <title>방송영상 · OTT 트렌드</title>
 
@@ -25,6 +25,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -38,16 +40,16 @@
     <div class="nav-right">
       <div class="nav">
         <a href="./index.html#spotlight" class="nav-item">스포트라이트</a>
-        <a href="./index.html#people" class="nav-item">피플 인사이트</a>
-        <a href="./index.html#global" class="nav-item">글로벌 마켓 리포트</a>
         <a href="./index.html#trend" class="nav-item">트렌드 하이라이트</a>
+        <a href="./index.html#people" class="nav-item">피플 인사이트</a>
+        <a href="./index.html#global" class="nav-item">글로벌 마켓 리포트</a>        
         <a href="./index.html#data-point" class="nav-item">데이터 포인트</a>
       </div>
 
       <button id="menu-toggle" class="hamburger">
         <span></span><span></span><span></span>
       </button>
-      <div class="vol-info">2025 Vol. 5</div>
+      <div class="vol-info">2026 Vol.1 (5월호)</div>
     </div>
 
     <!-- Fullscreen Mobile Modal -->
@@ -55,7 +57,7 @@
       <div class="menu-header">
         <p class="menu-title">메뉴</p>
         <div class="menu-right">
-          <div class="vol-info">2025 Vol. 5</div>
+          <div class="vol-info">2026 Vol.1 (5월호)</div>
           <button id="menu-close">
             <img src="./img/assets/close.png" alt="닫기" class="close-btn" />
           </button>
@@ -95,9 +97,9 @@
               <div class="item-overlay"></div>
               <div class="item-content">
                 <div style="display: flex; flex-direction: column;">
-                  <p class="item-author">최세정ㅣ고려대학교 미디어대학 교수</p>
+                  <p class="item-author">최민근ㅣMBC PD</p>
                 </div>
-                <h2 class="item-title">크리에이터 이코노미 대격변: 니치 마켓의 선봉에서 미디어 생태계의 중심으로</h2>
+                <h2 class="item-title">AI 기반 방송 콘텐츠 제작의 패러다임 전환과 미래 전망</h2>
               </div>
             </a>
           </div>
@@ -108,8 +110,8 @@
               <div class="item-bg" style="background-image: url('./img/manuscript2/thum.png');"></div>
               <div class="item-overlay"></div>
               <div class="item-content">
-                <p class="item-author">이은주ㅣ《서울신문》 기자</p>
-                <h2 class="item-title"><span class="bodyQuotes">‘</span>팬심<span class="bodyQuotes">’</span>이 곧 경쟁력...크리에이터 콘텐츠 생태계 이끄는 <span class="bodyQuotes">‘</span>팬덤 이코노미<span class="bodyQuotes">’</span></h2>
+                <p class="item-author">한성희ㅣ미디어연구소 미디어기술연구부 부장</p>
+                <h2 class="item-title">AI 기본법 도입 이후, 국내외 방송사 전략 분석</h2>
               </div>
             </a>
           </div>
@@ -120,8 +122,8 @@
               <div class="item-bg" style="background-image: url('./img/manuscript3/thum.png');"></div>
               <div class="item-overlay"></div>
               <div class="item-content">
-                <p class="item-author">권예지ㅣ한국방송광고진흥공사 미디어광고연구소 선임연구위원</p>
-                <h2 class="item-title">크리에이터 이코노미와 광고전략: 연결을 넘어 관계로, 관계를 넘어 시장으로</h2>
+                <p class="item-author">고몽ㅣ크리에이터&BEYONDER STUDIO 대표</p>
+                <h2 class="item-title">크리에이터 생태계와 AI</h2>
               </div>
             </a>
           </div>
@@ -137,53 +139,117 @@
     </div>
   </section> 
 
-  <!-- 콘텐츠: People 섹션 -->
-  <section id="people" class="section people">
+  <!-- 콘텐츠: Trend 섹션 -->
+  <section id="trend" class="section">
     <div class="section-container">
       <div class="section-title-wrap">
         <div class="section-title-text">
-          <p class="kor-title">피플 인사이트</p>
+          <p class="kor-title">트렌드 하이라이트</p>
           <p class="eng-title">
-            People Insigh<span class="text-highlight">T</span>
+            Trend Highligh<span class="text-highlight">T</span>
           </p>
         </div>
-        <img src="./img/assets/people-subject-pc.png" alt="주제" class="subject-img-pc" />
       </div>
-      <img src="./img/assets/people-subject-m.png" alt="주제" class="subject-img-m" />
 
-      <div class="swiper people-swiper">
-        <div class="swiper-wrapper people-grid">
-          <!-- PeopleItem A -->
+      <div class="swiper trend-swiper">
+        <div class="swiper-wrapper trend-grid">
+          <!-- TrendItem A -->
           <div class="swiper-slide">
-            <a href="./people_1.html" class="people-item">
+            <a href="./trend_1.html" class="trend-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript9/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">이재민ㅣ만화연구소 소장</p>
+                <h2 class="item-title">
+                  설렘은 글로벌, “유미의 세포들” 드라마, 어떻게 성공했을까?
+                </h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- TrendItem B -->
+          <div class="swiper-slide">
+            <a href="./trend_2.html" class="trend-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript10/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">조영신ㅣ미디어산업평론가</p>
+                <h2 class="item-title">
+                  글로벌 스트리밍 사업자의 라이브 중계 전략
+                </h2>
+              </div>
+            </a>
+          </div>
+
+          <!-- TrendItem C -->
+          <div class="swiper-slide">
+            <a href="./trend_3.html" class="trend-item">
+              <div class="item-bg" style="background-image: url('./img/manuscript11/thum.png');"></div>
+              <div class="item-overlay"></div>
+              <div class="item-content">
+                <p class="item-author">강보라ㅣ언론학 박사</p>
+                <h2 class="item-title">
+                  글로벌 중소 OTT 사업자의 틈새 시장 전략
+                </h2>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev trend-button-prev">
+          <img src="./img/assets/page-arrow.png" alt="이전" />
+        </div>
+        <div class="swiper-button-next trend-button-next">
+          <img src="./img/assets/page-arrow.png" alt="다음" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 콘텐츠: People 섹션 -->
+  <section id="people" class="section people">
+    <div class="section-container flex-col md:flex-row gap-4">
+      <div class="flex flex-col gap-6 w-full">
+        <div class="section-title-text flex items-end flex-row gap-2">
+          <p class="kor-title">피플 인사이트</p>
+          <p class="eng-title mb-1">People Insigh<span class="text-highlight">T</span></p>
+        </div>
+
+        <div class="flex flex-col gap-4 md:gap-7 xl:gap-10 md:flex-row">
+          <div
+            class="w-full md:w-1/2 relative h-[200px] sm:h-[280px] lg:h-[350px] xl:h-[378px] rounded-md overflow-hidden">
+            <!-- PeopleItem A -->
+            <a href="./people_1.html" class="people-item w-full">
               <div class="item-bg" style="background-image: url('./img/manuscript4/thum.png');"></div>
               <div class="item-overlay"></div>
-              <div class="item-content">
-                <p class="item-author">백승엽ㅣ스튜디오 수제 이사•PD</p>
-                <h2 class="item-title">유튜브의 바다에서 디지털 스튜디오의 생존 전략을 답하다</h2>
-              </div>
             </a>
           </div>
 
-          <!-- PeopleItem B -->
-          <div class="swiper-slide">
-            <a href="./people_2.html" class="people-item">
-              <div class="item-bg" style="background-image: url('./img/manuscript5/thum.png');"></div>
-              <div class="item-overlay"></div>
-              <div class="item-content">
-                <p class="item-author">박수진ㅣCJ ENM PD</p>
-                <h2 class="item-title">콘텐츠의 확장성, 세심한 밑작업이 만든다</h2>
-              </div>
+          <div class="w-full md:w-1/2">
+            <a href="./people_1.html" class="flex flex-col h-fit">
+              <h2 class="text-[18px] lg:text-[24px] font-semibold hover:underline">K-콘텐츠 AI 혁신 선도 기업을 만나다.</h2>
+              <p class="text-[16px] lg:text-[18px] font-semibold">더핑크퐁컴퍼니ㅣ권빛나 CSO</p>
+              <p
+                class="text-[14px] lg:text-[16px] leading-[1.6] text-[#767676] text-justify overflow-hidden w-full line-clamp-4 mt-4">
+                2025년 KOCCA, 100억 규모 'K-콘텐츠 AI 혁신 선도 프로젝트' 주관사인 더핑크퐁컴퍼니는 <아기상어>, <베베핀> 등 강력한 IP에 생성형 AI를 접목하여 관람객과 캐릭터가 실시간으로 대화하고 반응하는 전시를 구현했다. 사업전략본부의 권빛나 이사로부터 포자랩스(AI 음악), 셀렉트스타(AI 데이터) 등과 컨소시엄을 맺어 진행한 더핑크퐁컴퍼니의 사례와 향후 업계 전망에 대해 들어본다.
+              </p>
             </a>
-          </div>
-        </div>
 
-        <!-- Swiper 버튼 -->
-        <div class="button-hidden swiper-button-prev people-button-prev">
-          <img src="./img/assets/page-arrow.png" alt="이전"/>
-        </div>
-        <div class="button-hidden swiper-button-next people-button-next">
-          <img src="./img/assets/page-arrow.png" alt="다음" />
+            <div class="w-fit flex gap-3 mt-5 md:mt-10">
+              <a
+                href="./people_1.html"
+                class="inline-flex items-center rounded-full bg-[var(--primary-500)] px-5 py-3 text-[14px] md:text-[16px] text-white transition hover:opacity-90"
+              >
+                자세히 보기
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=RFX3ZEjXxeo" target="_blank"
+                class="inline-flex items-center rounded-full border border-[var(--primary-500)] border-solid px-5 py-3 text-[14px] md:text-[16px] text-[var(--primary-500)] transition hover:bg-[var(--primary-500)] hover:text-white"
+              >
+                인터뷰 영상 보기
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -250,86 +316,7 @@
     </div>
   </section>
 
-  <!-- 콘텐츠: Trend 섹션 -->
-  <section id="trend" class="section">
-    <div class="section-container">
-      <div class="section-title-wrap">
-        <div class="section-title-text">
-          <p class="kor-title">트렌드 하이라이트</p>
-          <p class="eng-title">
-            Trend Highligh<span class="text-highlight">T</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="swiper trend-swiper">
-        <div class="swiper-wrapper trend-grid">
-          <!-- TrendItem A -->
-          <div class="swiper-slide">
-            <a href="./trend_1.html" class="trend-item">
-              <div class="item-bg" style="background-image: url('./img/manuscript9/thum.png');"></div>
-              <div class="item-overlay"></div>
-              <div class="item-content">
-                <p class="item-author">전은선ㅣCJ ENM 전략지원팀</p>
-                <h2 class="item-title">
-                  국내 OTT, 로컬을 넘어 글로벌로 간다: 티빙(TVING) 글로벌 진출의 의의와 과제
-                </h2>
-              </div>
-            </a>
-          </div>
-
-          <!-- TrendItem B -->
-          <div class="swiper-slide">
-            <a href="./trend_2.html" class="trend-item">
-              <div class="item-bg" style="background-image: url('./img/manuscript10/thum.png');"></div>
-              <div class="item-overlay"></div>
-              <div class="item-content">
-                <p class="item-author">이규탁ㅣ한국조지메이슨대학교 국제학과 교수</p>
-                <h2 class="item-title">
-                  K-팝, 장르에서 콘텐츠로
-                </h2>
-              </div>
-            </a>
-          </div>
-
-          <!-- TrendItem C -->
-          <div class="swiper-slide">
-            <a href="./trend_3.html" class="trend-item">
-              <div class="item-bg" style="background-image: url('./img/manuscript11/thum.png');"></div>
-              <div class="item-overlay"></div>
-              <div class="item-content">
-                <p class="item-author">박꽃ㅣ《이투데이》 문화전문기자</p>
-                <h2 class="item-title">
-                  화면 밖으로 나온 방송영상콘텐츠, 체험으로 확장하다.
-                </h2>
-              </div>
-            </a>
-          </div>
-
-          <!-- TrendItem D -->
-          <div class="swiper-slide">
-            <a href="./trend_4.html" class="trend-item">
-              <div class="item-bg" style="background-image: url('./img/manuscript12/thum.png');"></div>
-              <div class="item-overlay"></div>
-              <div class="item-content">
-                <p class="item-author">손영준ㅣ오길비코리아 AE</p>
-                <h2 class="item-title">
-                  AI가 이끄는 넥스트 프로덕션 시대: 창작의 확장, 제작의 새로운 패러다임
-                </h2>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="swiper-button-prev trend-button-prev">
-          <img src="./img/assets/page-arrow.png" alt="이전" />
-        </div>
-        <div class="swiper-button-next trend-button-next">
-          <img src="./img/assets/page-arrow.png" alt="다음" />
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- 콘텐츠: Data Point 섹션 -->
   <section id="data-point" class="section data-point">

@@ -15,7 +15,7 @@ sup {
   vertical-align: super;
   font-size: 0.7em;
   font-weight: 600;
-  color: var(--brand500);
+  color: var(--primary-500);
 }
 
 /* =====================
@@ -73,7 +73,7 @@ sup {
 }
 
 .banner-meta .banner-number {
-  background-color: var(--brand500);
+  background-color: var(--primary-500);
   padding: 4px 16px;
   border-radius: 9999px;
   font-weight: 600;
@@ -94,8 +94,8 @@ sup {
 
 .lead-section {
   padding: 60px 0;
-  background-color: var(--gray200);
-  color: var(--gray700);
+  background-color: var(--gray-200);
+  color: var(--gray-700);
   text-align: justify;
   line-height: 1.8;
 }
@@ -135,9 +135,9 @@ sup {
   line-height: 1.4;
   border-radius: 8px;
 
-  color: var(--gray700);
-  background-color: var(--gray200);
-  border: 1px solid var(--gray300);
+  color: var(--gray-700);
+  background-color: var(--gray-200);
+  border: 1px solid var(--gray-300);
 
   margin-top: 20px;
   margin-bottom: 16px;
@@ -181,7 +181,7 @@ sup {
 ===================== */
 .datapoint-lead-wrapper {
   padding: 40px 20px;
-  background-color: var(--gray100);
+  background-color: var(--gray-100);
 }
 
 .datapoint-lead-inner {
@@ -203,7 +203,7 @@ sup {
 
 .datapoint-lead-label {
   font-weight: 600;
-  background-color: var(--brand500);
+  background-color: var(--primary-500);
   color: white;
   width: fit-content;
   padding: 2px 12px;
@@ -281,7 +281,7 @@ sup {
   border-radius: 8px;
 
   color: white;
-  background-color: var(--brand500);
+  background-color: var(--primary-500);
 
   margin-top: 20px;
   margin-bottom: 4px;
@@ -290,7 +290,7 @@ sup {
 
 .interview-summary {
   padding: 8px 12px;
-  background-color: var(--gray200);
+  background-color: var(--gray-200);
   border-radius: 8px;
 
   font-size: 20px;
@@ -368,7 +368,7 @@ sup {
     transform: translateY(-50%);
     width: 4px;
     height: 80%;
-    background-color: var(--brand500);
+    background-color: var(--primary-500);
   }
 }
 
@@ -391,7 +391,7 @@ sup {
 .subtitle-bar-mobile {
   width: 22px;
   height: 4px;
-  background-color: var(--brand500);
+  background-color: var(--primary-500);
 }
 
 @media (min-width: 768px) {
@@ -403,7 +403,7 @@ sup {
 .subtitle-text {
   font-size: var(--title-Manuscript);
   font-weight: 600;
-  color: var(--brand500);
+  color: var(--primary-500);
 }
 
 /* =====================
@@ -418,14 +418,14 @@ sup {
 }
 
 .paragraph {
-  color: var(--gray700);
+  color: var(--gray-700);
   text-align: justify;
   line-height: 1.8;
 }
 
 .added-text {
   font-size: var(--text-md);
-  color: var(--gray400);
+  color: var(--gray-400);
 }
 
 @media (max-width: 768px) {
@@ -444,7 +444,7 @@ sup {
   gap: 16px;
   padding:16px;
   border-radius: 8px;
-  background-color:var(--gray200);
+  background-color:var(--gray-200);
 }
 
 .opinion-contents {
@@ -457,7 +457,7 @@ sup {
 .opinion-interviewer {
   font-size: 16px;
   line-height: 1.6;
-  color: var(--brand600);
+  color: var(--primary-500);
   text-align: justify;
 }
 
@@ -494,7 +494,7 @@ sup {
 .image-title,
 .image-caption {
   font-size: var(--text-md);
-  color: var(--gray500);
+  color: var(--gray-500);
   line-height: 1.4;
 
   text-align: justify;
@@ -504,7 +504,7 @@ sup {
 }
 
 .text-brand {
-  color: var(--brand500);
+  color: var(--primary-500);
 }
 
 .section-image {
@@ -537,13 +537,13 @@ sup {
 }
 
 .table-number {
-  color: var(--brand500);
+  color: var(--primary-500);
 }
 
 .table-scroll {
   overflow-x: auto;
   font-size:14px;
-  border: 1px solid var(--gray200);
+  border: 1px solid var(--gray-200);
 }
 
 .responsive-table {
@@ -553,7 +553,7 @@ sup {
 }
 
 .responsive-table thead tr {
-  background-color: var(--brand500);
+  background-color: var(--primary-500);
   color: white; 
 }
 
@@ -570,11 +570,11 @@ sup {
 
 .responsive-table td {
   padding: 8px;
-  border: 1px solid var(--gray200);
+  border: 1px solid var(--gray-200);
 }
 
 .responsive-table td {
-  background-color: var(--gray100);
+  background-color: var(--gray-100);
 }
 
 .table-caption {
@@ -676,8 +676,8 @@ sup {
   flex-direction: column;
   gap: 16px;
   padding: 24px 0;
-  border-top: 1px solid var(--gray300);
-  border-bottom: 1px solid var(--gray300);
+  border-top: 1px solid var(--gray-300);
+  border-bottom: 1px solid var(--gray-300);
   margin-top: 60px;
 }
 
@@ -718,19 +718,19 @@ sup {
 .author-name {
   font-size: var(--title-sectionEnglish);
   font-weight: 600;
-  color: var(--brand500);
+  color: var(--primary-500);
   line-height: 1.4;
 }
 
 .author-affiliation {
   font-size: var(--text-lg);
   font-weight: 400;
-  color: var(--gray700);
+  color: var(--gray-700);
 }
 
 .author-description {
   font-size: var(--text-sm);
-  color: var(--gray700);
+  color: var(--gray-700);
   line-height: 1.8;
   text-align: justify;
   word-break: break-all;
@@ -769,8 +769,8 @@ sup {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: var(--gray200);
-  color: var(--gray700);
+  background-color: var(--gray-200);
+  color: var(--gray-700);
   margin-top:120px;
 }
 
@@ -794,7 +794,7 @@ sup {
 .post-nav-div {
   width: 1px;
   height: 100px;
-  background: var(--gray400);
+  background: var(--gray-400);
 }
 
 .post-nav.prev {
@@ -870,7 +870,7 @@ sup {
   }
 
   .post-nav.prev {
-    border-bottom: 1px solid var(--gray300);
+    border-bottom: 1px solid var(--gray-300);
     border-right:none;
   }
   .post-nav.next {
@@ -887,13 +887,13 @@ sup {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: var(--gray200);
+  background-color: var(--gray-200);
   z-index: 9999;
 }
 
 #progress-bar {
   height: 100%;
-  background-color: var(--brand500);
+  background-color: var(--primary-500);
   width: 0%;
   transition: all 0.2s;
 }
@@ -922,7 +922,7 @@ sup {
 .anchor-button-inner {
   width: 48px;
   height: 48px;
-  background-color: var(--brand500);
+  background-color: var(--primary-500);
   border-radius: 50%;
   display: flex;
   align-items: center;
