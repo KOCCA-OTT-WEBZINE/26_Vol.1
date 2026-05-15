@@ -8,7 +8,7 @@ const spotlightItem = {
     author: { name: "이은주", affiliation: "《서울신문》 기자" },
   },
   2: {
-    title: "크리에이터 이코노미와 광고전략: 연결을 넘어 관계로, 관계를 넘어 시장으로",
+    title: "AI 시대, 크리에이터는 어떻게 살아남는가 - 유튜브 크리에이터 ‘고몽’의 생성형 AI 활용 전략 10문10답",
     author: { name: "권예지", affiliation: "한국방송광고진흥공사 미디어광고연구소 선임연구위원" },
   },
 };

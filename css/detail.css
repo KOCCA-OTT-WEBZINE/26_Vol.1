@@ -630,6 +630,7 @@ sup {
   margin-top: var(--content-spacing);
 }
 
+
 .reference-title {
   font-size: var(--title-thumnail);
   font-weight: 600;
@@ -641,6 +642,7 @@ sup {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  list-style: decimal;
 }
 
 .reference-items li {
