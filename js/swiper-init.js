@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const contents = [
     {
       sectionName: "스포트라이트",
-      theme: "방송영상콘텐츠 창작 생태계 구조 변화를 조망하다",
+      theme: "에이전틱 AI의 시대, 방송영상사업자의 AX 전략",
       item: "크리에이터 이코노미 대격변:<br>니치 마켓의 선봉에서 미디어 생태계의 중심으로",
       img: "./img/manuscript1/banner.png",
       imgMobile: "./img/manuscript1/banner-m.png",
